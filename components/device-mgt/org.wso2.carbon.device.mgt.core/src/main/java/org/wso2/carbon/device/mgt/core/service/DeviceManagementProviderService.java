@@ -509,6 +509,8 @@ public interface DeviceManagementProviderService {
     boolean setStatus(DeviceIdentifier deviceId, String currentOwner,
                       EnrolmentInfo.Status status) throws DeviceManagementException;
 
+    boolean setStatus(String currentOwner, EnrolmentInfo.Status status) throws DeviceManagementException;
+
     void notifyOperationToDevices(Operation operation,
                                   List<DeviceIdentifier> deviceIds) throws DeviceManagementException;
 
